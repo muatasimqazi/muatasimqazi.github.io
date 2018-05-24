@@ -1,0 +1,20 @@
+.profile-card {
+    /* width: 50vw; */
+    top: 20vh;
+}
+
+.profile-img {
+    position: relative;
+    top: -90px;
+    max-width: 200px;
+    margin-bottom: -75px;
+}
+.social {
+
+    list-style: none;
+}
+.social li {
+    min-width: 50px;
+    height: 50px;
+    line-height: 70px;
+}
