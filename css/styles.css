@@ -42,3 +42,7 @@
 .social-icons li a {
     color: white;
 }
+
+header {
+    margin-bottom: 25vh;
+}
