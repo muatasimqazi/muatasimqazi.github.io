@@ -17,8 +17,8 @@
     margin-bottom: -75px;
 }
 
-.contact {
-    opacity: 0.9;
+.bg-dark-light {
+    background: rgba(50, 70, 81, .8);
 }
 
 .contact a {
@@ -52,7 +52,7 @@
 }
 
 header {
-    margin-bottom: 25vh;
+    margin-bottom: 5vh;
 }
 
 /* .project-img img {
