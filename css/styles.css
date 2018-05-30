@@ -1,9 +1,13 @@
 .jumbotron {
-    min-height: 80vh;
+    min-height: 75vh;
+    background-image: url('../images/hero.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .profile-card {
-    top: 30vh;
+    top: 20vh;
 }
 
 .profile-img {
@@ -11,6 +15,10 @@
     top: -90px;
     max-width: 200px;
     margin-bottom: -75px;
+}
+
+.bg-dark-light {
+    background: rgba(50, 70, 81, .8);
 }
 
 .contact a {
@@ -44,7 +52,7 @@
 }
 
 header {
-    margin-bottom: 25vh;
+    margin-bottom: 5vh;
 }
 
 /* .project-img img {
@@ -105,4 +113,18 @@ header {
 
 .link {
     background: rgba(0, 0, 0, 0.5);
+}
+
+#scroll {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 99;
+    cursor: pointer;
+    bottom: 20px;
+    right: 30px;
+}
+
+#scroll:hover {
+    background: #ff9800 !important;
 }
