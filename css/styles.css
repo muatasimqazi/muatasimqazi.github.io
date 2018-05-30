@@ -1,9 +1,13 @@
 .jumbotron {
-    min-height: 80vh;
+    min-height: 75vh;
+    background-image: url('../images/hero.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .profile-card {
-    top: 30vh;
+    top: 20vh;
 }
 
 .profile-img {
@@ -11,6 +15,10 @@
     top: -90px;
     max-width: 200px;
     margin-bottom: -75px;
+}
+
+.contact {
+    opacity: 0.9;
 }
 
 .contact a {
