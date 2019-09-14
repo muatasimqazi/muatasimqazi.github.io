@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import Nav from './nav';
+import Nav from './Nav';
 
 // components/Layout.js
 import globalStyles from '../styles/global.js';
+import Footer from './Footer';
 
 const withLayout = Page => {
   return () => (
@@ -28,7 +29,10 @@ const withLayout = Page => {
         </style>
       </Head>
       <Nav />
-      <Page />
+      <main>
+        <Page />
+      </main>
+      <Footer />
     </div>
   );
 };

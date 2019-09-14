@@ -45,17 +45,19 @@ const projects = [
       'A website built as part of a class project that provides most functionalities offered by Slack.'
   }
 ].map(project => {
-  return <Project project={project} />;
+  return <Project key={project.title} project={project} />;
 });
 
 const ProjectList = props => {
   return (
-    <section id="projects" class="bg-section ">
-      <div class="container pb-5 pt-5">
-        <div class="row m-0 pb-3">
+    <section id="projects" className="bg-section ">
+      <div className="container pb-5 pt-5">
+        <div className="row m-0 pb-3">
           <h3>Selected Projects</h3>
         </div>
-        <div class="row justify-content-md-center card-deck">{projects}</div>
+        <div className="row justify-content-md-center card-deck">
+          {projects}
+        </div>
       </div>
     </section>
   );
