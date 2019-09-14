@@ -1,56 +1,39 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
 const links = [
   { href: 'https://zeit.co/now', label: 'ZEIT' },
   { href: 'https://github.com/zeit/next.js', label: 'GitHub' }
 ].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+  link.key = `nav-link-${link.href}-${link.label}`;
+  return link;
+});
 
 const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link href='/'>
-          <a>Home</a>
-        </Link>
-      </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
-        </li>
-      ))}
-    </ul>
-
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
+  <nav className="navbar navbar-expand-sm navbar-light container">
+    <span className="navbar-brand mb-0 h1 regular">Muatasim Qazi</span>
+    <div
+      className="collapse navbar-collapse justify-content-between"
+      id="navbar"
+    >
+      <div className="navbar-nav">
+        <a className="nav-item nav-link" href="#about">
+          About
+        </a>
+        <a className="nav-item nav-link" href="#projects">
+          Projects
+        </a>
+        <a className="nav-item nav-link" href="#contact">
+          Contact
+        </a>
+      </div>
+      <div className="navbar-nav">
+        <a className="nav-item nav-link" href="/media/mqazi-resume.pdf">
+          Resume
+        </a>
+      </div>
+    </div>
   </nav>
-)
+);
 
-export default Nav
+export default Nav;
