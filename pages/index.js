@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import withLayout from '../components/Layout';
+import Intro from '../components/Intro';
 
-const Home = () => <p>Hello Next.js</p>;
+const Home = () => <Intro />;
 
 export default withLayout(Home);
