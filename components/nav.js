@@ -28,7 +28,10 @@ const Nav = () => (
         </a>
       </div>
       <div className="navbar-nav">
-        <a className="nav-item nav-link" href="/media/mqazi-resume.pdf">
+        <a
+          className="nav-item nav-link"
+          href="../static/media/mqazi-resume.pdf"
+        >
           Resume
         </a>
       </div>
