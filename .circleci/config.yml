@@ -84,6 +84,6 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - develop
           requires:
             - test
