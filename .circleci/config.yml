@@ -20,9 +20,6 @@ jobs:
       - run:
           name: npm-install
           command: npm install
-      - run:
-          name: test-reporter-setup
-          command: npm install jest-junit --no-save
       - save_cache:
           <<: *cache-options
           paths:
