@@ -24,9 +24,7 @@ const withLayout = Page => {
           crossorigin='anonymous'
         />
 
-        <style jsx global>
-          {globalStyles}
-        </style>
+        <style type='text/css'>{globalStyles}</style>
 
         <script
           defer
