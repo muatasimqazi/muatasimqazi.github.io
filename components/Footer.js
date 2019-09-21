@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="p-5">
+    <footer className='p-5'>
       {/* <a
         id="scroll"
         className="scroll rounded-circle bg-dark-light p-3 text-white"
@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div>© Copyright 2019 Muatasim Qazi. All Rights Reserved</div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

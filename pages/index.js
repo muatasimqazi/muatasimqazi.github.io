@@ -1,9 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
-import withLayout from '../components/Layout';
-import Intro from '../components/Intro';
-import ProjectList from '../components/ProjectList';
-import Contact from '../components/Contact';
+import React from 'react'
+import withLayout from '../components/Layout'
+import Intro from '../components/Intro'
+import ProjectList from '../components/ProjectList'
+import Contact from '../components/Contact'
 
 const Home = () => (
   <>
@@ -11,6 +10,6 @@ const Home = () => (
     <ProjectList />
     <Contact />
   </>
-);
+)
 
-export default withLayout(Home);
+export default withLayout(Home)

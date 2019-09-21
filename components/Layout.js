@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import Nav from './Nav';
+import Head from 'next/head'
 
 // components/Layout.js
-import globalStyles from '../styles/global.js';
-import Footer from './Footer';
+import globalStyles from '../styles/global.js'
+import Footer from './Footer'
+import Navbar from './Nav'
 
 const withLayout = Page => {
   return () => (
@@ -16,7 +16,7 @@ const withLayout = Page => {
           type="image/png"
           sizes="32x32"
           href="../static/favicon.png"
-        ></link>
+        />
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -33,15 +33,15 @@ const withLayout = Page => {
           src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
           integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
           crossorigin="anonymous"
-        ></script>
+        />
       </Head>
-      <Nav />
+      <Navbar />
       <main>
         <Page />
       </main>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default withLayout;
+export default withLayout
